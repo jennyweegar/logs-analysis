@@ -15,7 +15,7 @@ Vagrant: https://www.vagrantup.com/downloads.html <br>
 Viewbox: https://www.virtualbox.org/wiki/Download_Old_Builds_5_1 <br>
 
 ## How To Run This Program <br>
-You will need to download all materials listed above. Once downloaded clone this repository to your machine. Launch Vagrant VM by running ```vagrant up``` in your terminal (this may take quite a long time to run) and then logon to Vagrant with ```vagrant ssh```.
+You will need to download all materials listed above. Once downloaded clone this repository to your machine. Launch Vagrant VM by running ```vagrant up``` in your terminal (this may take quite a long time to run) and then logon to Vagrant with <br>```vagrant ssh```.
 
 Next, download the [sql file needed to run the query here](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip). You will need to unzip this file after downloading it. The file inside is called newsdata.sql. Move this file into the vagrant directory, which is shared with your virtual machine.
 
