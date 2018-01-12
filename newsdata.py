@@ -4,7 +4,7 @@
 import psycopg2
 
 
-# What are the most popular three articles of all time?
+#Q1 What are the most popular three articles of all time?
 question_1_title = ("What are the most popular three articles of all time?")
 question_1 = (
     "select articles.title, count(*) as views "
@@ -13,7 +13,7 @@ question_1 = (
     "where log.status like '%200%' group by "
     "articles.title, log.path order by views desc limit 3")
 
-# Who are the most popular article authors of all time?
+#Q2 Who are the most popular article authors of all time?
 question_2_title = ("Who are the most popular article authors of all time?")
 question_2 = (
     "select authors.name, count(*) as views from articles inner "
@@ -22,7 +22,7 @@ question_2 = (
     "log.status like '%200%' group "
     "by authors.name order by views desc")
 
-# On which days did more than 1% of requests lead to errors
+#Q3 On which days did more than 1% of requests lead to errors
 question_3_title = ("On which days did more than 1% of requests lead to errors?")
 question_3 = (
     "select day, perc from ("
